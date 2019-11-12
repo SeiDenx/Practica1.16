@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 1.16</title>
+</head>
+<body>
+    <main>
+        <form action="ejemplo.php" method="get">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Tratamiento: *</td>
+                        <td>Nombre: *</td>
+                        <td>Apellido 1: *</td>
+                        <td>Apellido 2: *</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="boton1" value="Sr" required>Sr. 
+                            <input type="radio" name="boton1" value="Sra" required>Sra.
+                        </td>
+                        <td><input type="text" name="nombre" size="20" required></td>
+                        <td><input type="text" name="apellido1" size="20" required></td>
+                        <td><input type="text" name="apellido2" size="20" required></td>
+                    </tr>
+                    <tr>
+                        <td>Tipo Doc: *</td>
+                        <td>Nº Doc: *</td>
+                        <td>Fecha de nacimiento: *</td>
+                    </tr>
+                    <tr>
+                        <td>   
+                            <select name="tipo_doc" required>
+                                <option value="DNI" selected>DNI</option>
+                                <option value="NIE">NIE</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="numdoc" size="20" required></td></td>
+                        <td><input type="date" name="fecha" required></td>
+                    </tr>
+                    <tr>
+                        <td>País de nacimiento: *</td>
+                        <td>Nacionalidad: *</td>
+                        <td>Segunda nacionalidad:</td>
+                        <td>País de resindencia fiscal: *</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="paisnacimiento" required>
+                                <option value="españa" selected>España</option>
+                                <option value="francia">Francia</option>
+                                <option value="alemania">Alemania</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="nacionalidad" required>
+                                <option value="españa" selected>España</option>
+                                <option value="francia">Francia</option>
+                                <option value="alemania">Alemania</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="segnacion">
+                                <option value="ninguna" selected>Ninguna</option>
+                                <option value="españa">España</option>
+                                <option value="francia">Francia</option>
+                                <option value="alemania">Alemania</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="paisfiscal" required>
+                                <option value="españa" selected>España</option>
+                                <option value="francia">Francia</option>
+                                <option value="alemania">Alemania</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trabajo*</td>
+                        <td>Tipo de Actividad*</td>
+                        <td>Sector Profesional*</td>
+                        <td>Empresa: *</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="trabajo" required>
+                                <option value="carpintero" selected>Carpintero</option>
+                                <option value="albañil">Albañil</option>
+                                <option value="dise">Alemania</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>
+</body>
+</html>
