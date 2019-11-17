@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main {
+    padding-bottom: 40px;
+}
+
+li {
+	margin: 0px;
+	padding: 0px;
+	
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu ul li  {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    float: left;
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+.form {
+    border: black 1px solid;
+    width: 800px;
+    margin: 0 auto;
+}
+.form2 {
+    width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    padding: 20px;
+    width: 100%;
+}
+
+span.sombreado {
+    color: grey;
+}
+
+.btn {
+    padding: 15px;
+    background-color: orange;
+    border: 0px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+    background-color: peru;
+    color: white;
+}
+
+.celda {
+    padding: 15px;
+}
+
+.img {
+    text-align: center;
+}
+
+.area {
+    text-align: center;
+}
+
+table.fondo {
+    background-color: rgb(189, 186, 186);
+    width: 760px;
+    margin: 0 auto;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: black;
+    color: cornsilk;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+}
+
+footer a {
+    color: cornsilk;
+}

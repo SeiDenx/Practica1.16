@@ -1,12 +1,24 @@
 <!DOCTYPE html>
+<!-- Desarrollado por Carlos Fernández -->
+<!-- Fecha: 12/11/19 -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Práctica 1.16</title>
+    <title>Práctica 1.16 | Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <h1>Formulario 1</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="https://carlosfdezdaw.github.io/Practica1.16/">GitHub</a></li>
+            <li><a href="fom2.html">Formulario 2</a></li>
+        </ul>
+    </nav>
     <main>
-        <form action="ejemplo.php" method="get">
+        <form class="form" action="ejemplo.php" method="get">
             <table>
                 <tbody>
                     <tr>
@@ -87,13 +99,146 @@
                             <select name="trabajo" required>
                                 <option value="carpintero" selected>Carpintero</option>
                                 <option value="albañil">Albañil</option>
-                                <option value="dise">Alemania</option>
+                                <option value="diseñador">Diseñador</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="actividad" required>
+                                <option value="hogar" selected>Tareas hogar</option>
+                                <option value="estudiante">Estudiante</option>
+                                <option value="desempleado">Desempleado</option>
+                                <option value="jubilado">Jubilado</option>
+                                <option value="pensionista">Pensionista</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="sector" required>
+                                <option value="notrabaja" selected>No trabaja</option>
+                                <option value="banca">Banca</option>
+                                <option value="construccion">Construcción</option>
+                                <option value="energia">Energía</option>
+                                <option value="industria">Industria</option>
+                                <option value="rrhh">Recursos humanos</option>
+                                <option value="servicios">Servicios</option>
+                            </select>
+                        <td><input type="text" name="empresa" size="20" required></td>  
+                    </tr>
+                    <tr>
+                        <td>Propósito de la cuenta: *</td>
+                        <td>Origen de sus ahorros: *</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="propisito" required>
+                                <option value="ahorro" selected>Ahorro</option>
+                                <option value="infantil">Infantil</option>
+                                <option value="online">Online</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="origen_ahorros" required>
+                                <option value="nomina" selected>Nómina</option>
+                                <option value="pension">Pensión</option>
+                                <option value="otros">Otros</option>
                             </select>
                         </td>
                     </tr>
                 </tbody>
             </table>
+            <table class="fondo">
+                <tbody>
+                    <tr>
+                        <td>Tipo de vía *</td>
+                        <td>Dirección *</td>
+                        <td>Número *</td>
+                        <td>Piso </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="via" required>
+                                <option value="calle" selected>Calle</option>
+                                <option value="avenida">Avenida</option>
+                                <option value="plaza">Plaza</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="direccion" size="20" required></td> 
+                        <td><input type="text" name="numero" size="20" required></td>
+                        <td><input type="text" name="piso" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td>Urb./Pol./Otros </td>
+                        <td>Localidad *</td>
+                        <td>Provincia *</td>
+                        <td>Codigo Postal *</td> 
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="urbanizacion" size="20"></td> 
+                        <td><input type="text" name="localidad" size="20" required></td>
+                        <td>
+                            <select name="provincia" required>
+                                <option value="valencia" selected>Valencia</option>
+                                <option value="castellon">Castellón</option>
+                                <option value="alicante">Alicante</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="cp" size="20" required></td>
+                    </tr>
+                    <tr>
+                        <td>Móvil: *</td>
+                        <td>Otro teléfono: *</td>
+                        <td>Correo E-mail: *</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="movil" size="20" required></td> 
+                        <td><input type="text" name="otrotel" size="20" required></td>
+                        <td><input type="email" name="email" size="20" required></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><hr></td>
+                    </tr>
+                    <tr>
+                        <td>Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="checkbox" name="planpension">Plan de pensiones</label>
+                            <label><input type="checkbox" name="fondos">Fondos</label>
+                            <label><input type="checkbox" name="acciones">Acciones</label>
+                            <label><input type="checkbox" name="hipoteca">Hipoteca</label>
+                            <label><input type="checkbox" name="prestamo">Prestamo</label>
+                            <label><input type="checkbox" name="Segurovida">Seguro de Vida</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><hr></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><span class="sombreado">Puede consultar en nuestra Web o solicitarnos toda la <a href="#">Información
+                             Precontractual</a> de nuestros productos. Al pulsar "Continuar" está 
+                             aceptando la <a href="#">cáusula de Protección de datos.</a></span></td>
+                        <td><input class="btn" type="submit" value="&#x279D; Continuar"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="sombreado">(*) Los campos marcados con asteriscos son obligatorios.</span></td>
+                    </tr>
+                </tbody>
+            </table>
         </form>
     </main>
+    <footer>
+        <address>
+            <p>Autor: Carlos Fernández</p>
+            <p>Correo:<a href="mailto:seidenx@gmail.com">seidenx@gmail.com</a></p>
+        </address>
+        <p>Ultima modificación: <time datetime="2019-11-04">17/11/2019</time></p>
+    </footer>
 </body>
 </html>
